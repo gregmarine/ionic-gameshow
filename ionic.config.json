@@ -1,0 +1,7 @@
+{
+  "name": "ionic-gameshow",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
