@@ -7,8 +7,8 @@ const DeepLinkListener: React.FC<any> = () => {
     let history = useHistory();
     useEffect(() => {
         CapApp.addListener('appUrlOpen', (data: any) => {
-            // Example url: https://mycoolsite.com/pages/page1
-            // slug = /pages/page1
+            // Example url: https://mycoolsite.com/page/page1
+            // slug = /page/page1
             const slug = data.url.split(".com").pop();
             if (slug) {
                 history.push(slug);

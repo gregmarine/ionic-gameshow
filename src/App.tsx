@@ -30,7 +30,9 @@ const App: React.FC = () => {
   return (
     <IonApp>
       <IonReactRouter>
+
         <DeepLinkListener />
+        
         <IonSplitPane contentId="main">
           <Menu />
           <IonRouterOutlet id="main">
