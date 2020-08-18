@@ -30,12 +30,12 @@ export default DeepLinkListener;
 ```
 
 After that, all we need to do is import it where our app initializes. In this case, App.tsx
-```typscript
+```typescript
 import DeepLinkListener from './components/DeepLinkListener';
 ```
 ...
 
-```typscript
+```typescript
 const App: React.FC = () => {
 
   return (
