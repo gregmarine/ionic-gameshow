@@ -1,5 +1,6 @@
 import Menu from './components/Menu';
 import Page from './pages/Page';
+import DeepLinkListener from './components/DeepLinkListener';
 import React from 'react';
 import { IonApp, IonRouterOutlet, IonSplitPane } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
@@ -29,6 +30,7 @@ const App: React.FC = () => {
   return (
     <IonApp>
       <IonReactRouter>
+        <DeepLinkListener />
         <IonSplitPane contentId="main">
           <Menu />
           <IonRouterOutlet id="main">
